@@ -1,0 +1,81 @@
+body {
+    background-color: gray;
+}
+main {
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    grid-template-areas:
+        "h h h"
+        "n n n"
+        "a a as"
+        "a a as"
+        "f f f";
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+header {
+    grid-area: h;
+    padding-left: 15px;
+    color: lightseagreen;
+}
+nav {
+    grid-area: n;
+    color: white;
+    background-color: lightseagreen;
+}
+nav ul li {
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+}
+article {
+    padding-left: 20px;
+    grid-area: a;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+article h1 {
+    background-color: rgb(233, 233, 233);
+    color: lightseagreen;
+    box-sizing: border-box;
+    border: rgb(231, 240, 250);
+    border-style: groove;
+}
+article img {
+    width: 100%;
+    box-sizing: border-box;
+    border: rgb(231, 240, 250);
+    border-style: groove;
+}
+.tarolo {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.ember {
+    border: rgb(231, 240, 250);
+    border-style: groove;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-right: 5px;
+}
+article p {
+    text-align: left;
+}
+aside {
+    grid-area: as;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+aside img {
+    width: 100%;
+    border: rgb(231, 240, 250);
+    border-style: groove;
+}
+footer {
+    grid-area: f;
+    text-align: center;
+    color: lightseagreen;
+}
